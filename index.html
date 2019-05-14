@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hamzah Umar</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        function expandNavbar(aNavbar) {
+            var x = document.getElementById(aNavbar);
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="navbar" id="main-navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#courses">Some Courses</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" id="burgerIcon" onclick="expandNavbar('main-navbar')">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="main">
+        <div class="row">
+            <div class="row-object" id="home">
+                <h1>HAMZAH UMAR</h1>
+                <div id="menu">
+                    <a href="#about">About Me</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#courses">Some Courses</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="row-object image" id="home-image">
+<!--                <img src="assets/images/home.jpg" alt="home">-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="row-object image" id="about-image">
+                <h2></h2>
+            </div>
+            <div class="row-object odd" id="about">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row-object even" id="education">
+                <h2>Education</h2>
+            </div>
+            <div class="row-object image" id="education-image">
+                <img src="assets/images/education.jpg" alt="education">
+            </div>
+        </div>
+        <div class="row">
+            <div class="row-object image" id="projects-image">
+                <h2></h2>
+            </div>
+            <div class="row-object odd" id="projects">
+                <h2>Projects</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row-object even" id="courses">
+                <h2>Some Courses</h2>
+            </div>
+            <div class="row-object image" id="courses-image">
+                <h2></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row-object image" id="contact-image">
+                <h2></h2>
+            </div>
+            <div class="row-object odd" id="contact">
+                <h2>Contact</h2>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Hamzah Umar 2019
+    </div>
+</body>
+
+</html>
