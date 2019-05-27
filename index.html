@@ -9,7 +9,7 @@
     <script src="scripts/main.js"></script>
     <script>
         function expandNavbar(aNavbar) {
-            var x = document.getElementById(aNavbar);
+            let x = document.getElementById(aNavbar);
             if (x.className === "navbar") {
                 x.className += " responsive";
             } else {
@@ -21,16 +21,18 @@
 </head>
 
 <body>
-    <div class="navbar" id="main-navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#courses">Some Courses</a>
-        <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" id="burgerIcon" onclick="expandNavbar('main-navbar')">
-            <i class="fa fa-bars"></i>
-        </a>
+    <div id="navbar-container">
+        <div class="navbar" id="main-navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#courses">Some Courses</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" id="burgerIcon" onclick="expandNavbar('main-navbar')">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </div>
     <div id="main">
         <div class="row">
@@ -50,30 +52,56 @@
         </div>
         <div class="row">
             <div class="row-object image" id="about-image">
-                <h2></h2>
+
             </div>
-            <div class="row-object odd" id="about">
+            <div class="row-object right" id="about">
                 <h2>About Me</h2>
+                <p>Hey there, I'm Hamzah. I'm a 4th year Computer Science student at the University of Calgary who loves
+                    developing software. I have a particular affinity towards web applications, but I enjoy writing
+                    software of all kinds.
+                </p>
+                <p>
+                    Outside of computer science, I enjoy learning about philosophy and the contrast between the
+                    deterministic and free-will driven views of the world. I also love exploring the history of the world.
+                </p>
             </div>
         </div>
         <div class="row">
-            <div class="row-object even" id="education">
+            <div class="row-object left" id="education">
                 <h2>Education</h2>
+                <div class="box">
+                    <h3>University of Calgary, Alberta, Canada</h3>
+                    <h4>BSc (Honours) Computer Science</h4>
+                    <h5>Sep. 2016 - present</h5>
+                    <p>
+                        Cumulative GPA: 3.514
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="box">
+                    <h3>British International School, Abu Dhabi, UAE</h3>
+                    <h4>International Baccalaureate (IB) Diploma</h4>
+                    <h5>Sep. 2014 - Jun. 2016</h5>
+                    <p>
+                        Points total: 34
+                    </p>
+                </div>
             </div>
             <div class="row-object image" id="education-image">
-                <img src="assets/images/education.jpg" alt="education">
+<!--                <img src="assets/images/education.png" alt="education">-->
             </div>
         </div>
         <div class="row">
             <div class="row-object image" id="projects-image">
                 <h2></h2>
             </div>
-            <div class="row-object odd" id="projects">
+            <div class="row-object right" id="projects">
                 <h2>Projects</h2>
             </div>
         </div>
         <div class="row">
-            <div class="row-object even" id="courses">
+            <div class="row-object left" id="courses">
                 <h2>Some Courses</h2>
             </div>
             <div class="row-object image" id="courses-image">
@@ -84,13 +112,13 @@
             <div class="row-object image" id="contact-image">
                 <h2></h2>
             </div>
-            <div class="row-object odd" id="contact">
+            <div class="row-object right" id="contact">
                 <h2>Contact</h2>
             </div>
         </div>
     </div>
     <div id="footer">
-        Hamzah Umar 2019
+        &copy Hamzah Umar 2019
     </div>
 </body>
 

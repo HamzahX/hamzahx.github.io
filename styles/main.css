@@ -6,20 +6,63 @@ h1 {
     color: #FF3B3F;
     text-align: center;
     font: 5em Helvetica;
+    padding-bottom: 4vh;
 }
 
 h2 {
     text-align: center;
     font: 2.5em Century Gothic;
     line-height: 0;
+    padding-bottom: 1.5vh;
+}
+
+h3 {
+    font: 1.5em Arial;
+}
+
+h4 {
+    font: 1.2em Arial;
+    color: gray;
+    /*line-height: 0;*/
+}
+
+h5 {
+    font: 1em Arial;
+    color: gray;
+    /*line-height: 0;*/
+}
+
+p {
+    text-align: left;
+    font: 1.3em "Trebuchet MS";
+}
+
+li {
+    text-align: left;
+    font: 1.15em "Trebuchet MS";
+    line-height: 5vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkred;
+}
+
+#navbar-container {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    background-color: black;
+    border-bottom: 0.3em solid darkred;
+    width: 100%;
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
     background-color: black;
-    border-bottom: 0.3em solid darkred;
     color: whitesmoke;
     overflow: hidden;
 }
@@ -27,9 +70,9 @@ h2 {
 .navbar a {
     display: inline-block;
     color: #f2f2f2;
-    font: 1em Century Gothic;
+    font: 1.1em Century Gothic;
     text-align: center;
-    padding: 1.8vh 1vw;
+    padding: 1.5vh 1.5vw;
     text-decoration: none;
 }
 
@@ -43,24 +86,26 @@ h2 {
 
 #main {
     margin: 0 auto;
+    max-width: 1500px;
     padding: 0;
     display: flex;
     flex-flow: column;
 }
 
 #main > .row {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: row;
 }
 
 #main > .row > .row-object {
     flex: 1 1 50%;
-    padding-top: 6vh;
+    padding-top: 6.3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 #home {
-    /*padding-top: 3vh;*/
     background: #111111;
     color: white;
 }
@@ -74,24 +119,25 @@ h2 {
 
 #home > #menu > a {
     display: block;
-    color: inherit;
-    text-decoration: none;
 }
 
 #home > #menu > a:hover{
     color: darkred;
 }
 
-#main > .row > .even {
-    background: lightgray;
+#main > .row > .left {
+    /*background: rgba(200, 0 , 0, 0.2);*/
 }
 
-#main > .row > .odd {
-    background: #EFEFEF;
+#main > .row > .right {
+    /*background: rgba(200, 0 , 0, 0.3);*/
 }
 
 #main > .row > .image {
+    background: rgba(200, 0 , 0, 0.4);
     padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #main > .row > .image > img {
@@ -100,26 +146,31 @@ h2 {
     object-fit: cover;
 }
 
-#footer{
+.box {
+    padding: 0vh 1vw;
+    border: 1px solid grey;
+}
+
+#footer {
     background-color: black;
     color: orangered;
     margin: 0 auto;
-    padding: 1.8vh;
+    padding: 1.5vh;
+    text-align: center;
     font: 1em Arial;
 }
 
 @media all and (max-width: 960px) {
 
-    .image {
-        display: none;
+    #navbar-container {
+        text-align: unset;
     }
 
-    #main > .row {
-        display: flex;
-        flex-flow: column;
+    .navbar {
+        animation: slideUp 0.5s;
     }
 
-    .navbar a{
+    .navbar a {
         padding-left: 3vw;
         padding-right: 3vw;
     }
@@ -134,9 +185,11 @@ h2 {
     }
 
     .navbar.responsive {
+        width: 100%;
         opacity: 0.75;
         position: fixed;
         top: 0;
+        border-bottom: 0.3em solid darkred;
     }
 
     .navbar.responsive a#burgerIcon {
@@ -151,4 +204,26 @@ h2 {
         text-align: left;
     }
 
+    #main > .row {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .image {
+        display: none;
+    }
+
 }
+
+@media all and (max-width: 400px) {
+
+    h1 {
+        color: #FF3B3F;
+        text-align: center;
+        font: 4em Helvetica;
+    }
+
+}
+
+
+
