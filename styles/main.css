@@ -1,3 +1,9 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0 auto;
 }
@@ -17,29 +23,27 @@ h2 {
 }
 
 h3 {
-    font: 1.5em Arial;
+    font: 1.2em Arial;
 }
 
 h4 {
-    font: 1.2em Arial;
+    font: 1em Arial;
     color: gray;
-    /*line-height: 0;*/
 }
 
 h5 {
     font: 1em Arial;
-    color: gray;
-    /*line-height: 0;*/
+    color: darkgray;
 }
 
 p {
     text-align: left;
-    font: 1.3em "Trebuchet MS";
+    font: 1.1em Trebuchet MS;
 }
 
 li {
     text-align: left;
-    font: 1.15em "Trebuchet MS";
+    font: 1.15em Trebuchet MS;
     line-height: 5vh;
 }
 
@@ -70,7 +74,7 @@ a:hover {
 .navbar a {
     display: inline-block;
     color: #f2f2f2;
-    font: 1.1em Century Gothic;
+    font: 1.1em Montserrat;
     text-align: center;
     padding: 1.5vh 1.5vw;
     text-decoration: none;
@@ -98,14 +102,17 @@ a:hover {
     flex-flow: row;
 }
 
+#main > .row:not(:last-child) {
+    box-shadow: 0 20px 10px -15px lightgray;
+}
+
 #main > .row > .row-object {
-    flex: 1 1 50%;
-    padding-top: 6.3vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    /*flex: 1 1 50%;*/
+    padding: 6.3vh 4vw 6.3vh 4vw;
 }
 
 #home {
+    flex: 1 1 100%;
     background: #111111;
     color: white;
 }
@@ -126,38 +133,41 @@ a:hover {
 }
 
 #main > .row > .left {
+    flex: 1 1 70%;
     /*background: rgba(200, 0 , 0, 0.2);*/
 }
 
 #main > .row > .right {
+    flex: 1 1 70%;
     /*background: rgba(200, 0 , 0, 0.3);*/
 }
 
 #main > .row > .image {
-    background: rgba(200, 0 , 0, 0.4);
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
+    flex: 1 1 30%;
+    /*background: rgba(200, 0 , 0, 0.4);*/
+    text-align: center;
+    padding: 35vh 0 0 0;
 }
 
 #main > .row > .image > img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    min-width: 240px;
+    width: 18vw;
+    /*object-fit: cover;*/
 }
 
 .box {
-    padding: 0vh 1vw;
-    border: 1px solid grey;
+    padding: 0 2vw;
+    border: 1px solid lightgray;
+    box-shadow: 3px 5px 5px lightgray;
 }
 
 #footer {
     background-color: black;
-    color: orangered;
     margin: 0 auto;
     padding: 1.5vh;
+    color: orangered;
+    font: 1.1em Montserrat;
     text-align: center;
-    font: 1em Arial;
 }
 
 @media all and (max-width: 960px) {
@@ -167,7 +177,7 @@ a:hover {
     }
 
     .navbar {
-        animation: slideUp 0.5s;
+        overflow: hidden;
     }
 
     .navbar a {
