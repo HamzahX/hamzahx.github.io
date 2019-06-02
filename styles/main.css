@@ -65,16 +65,16 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    color: darkred;
+}
+
 .quote {
     color: #888888;
     font-family: Times New Roman, Times, serif;
     font-style: italic;
     text-align: center;
     font-size: 2em;
-}
-
-a:hover{
-    color: darkred;
 }
 
 #navbar-container {
