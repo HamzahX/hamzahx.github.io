@@ -124,7 +124,7 @@ a:hover{
 }
 
 .row:not(:last-child) {
-    box-shadow: 0 20px 10px -18px lightgray;
+    box-shadow: 0 23px 10px -18px lightgray;
 }
 
 #home {
