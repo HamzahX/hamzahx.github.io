@@ -1,48 +1,57 @@
-html {
-    scroll-behavior: smooth;
-}
-
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0 auto;
+    background-color: whitesmoke;
 }
 
 h1 {
     color: #FF3B3F;
     text-align: center;
-    font: 5em Helvetica;
+    font: 6em Helvetica;
     padding-bottom: 4vh;
 }
 
 h2 {
+    color: orangered;
     text-align: center;
-    font: 2.5em Century Gothic;
+    font: 2.5em Questrial;
     line-height: 0;
-    padding-bottom: 1.5vh;
+    padding-bottom: 3vh;
 }
 
 h3 {
-    font: 1.2em Arial;
+    font: 1.4em Arial;
+    margin-bottom: 1vh;
+    margin-top: 0;
 }
 
 h4 {
-    font: 1em Arial;
+    font: 1.2em Arial;
     color: gray;
+    margin-bottom: 1vh;
+    margin-top: 0;
 }
 
 h5 {
-    font: 1em Arial;
+    font: 1.2em Arial;
     color: darkgray;
+    margin-bottom: 1vh;
+    margin-top: 0;
 }
 
 p {
     text-align: left;
-    font: 1.1em Trebuchet MS;
+    font: 1.3em Trebuchet MS;
+    color: dimgray;
 }
 
 li {
@@ -56,7 +65,15 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.quote {
+    color: #888888;
+    font-family: Times New Roman, Times, serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 2em;
+}
+
+a:hover{
     color: darkred;
 }
 
@@ -80,7 +97,7 @@ a:hover {
     color: #f2f2f2;
     font: 1.1em Montserrat;
     text-align: center;
-    padding: 1.5vh 1.5vw;
+    padding: 1.3vh 1.7vw;
     text-decoration: none;
 }
 
@@ -95,72 +112,81 @@ a:hover {
 #main {
     margin: 0 auto;
     max-width: 1500px;
-    padding: 0;
     display: flex;
     flex-flow: column;
 }
 
-#main > .row {
+.row {
     min-height: 100vh;
     display: flex;
     flex-flow: row;
+    padding: 8vh 4vw 6.3vh 4vw;
 }
 
-#main > .row:not(:last-child) {
-    box-shadow: 0 20px 10px -15px lightgray;
-}
-
-#main > .row > .row-object {
-    /*flex: 1 1 50%;*/
-    padding: 6.3vh 4vw 6.3vh 4vw;
+.row:not(:last-child) {
+    box-shadow: 0 20px 10px -18px lightgray;
 }
 
 #home {
+    padding: 11vh 4vw 6.3vh 4vw;
+    height: 100vh;
     flex: 1 1 100%;
     background: #111111;
-    color: white;
 }
 
 #home > #menu {
-    text-align: center;
-    font: 1.5em Century Gothic;
+    font: 1.5em Questrial;
     font-weight: bold;
     line-height: 6vh;
 }
 
 #home > #menu > a {
-    display: block;
+    color: white;
+    display: table;
+    margin: 0 auto;
 }
 
-#home > #menu > a:hover{
+#home > #menu > a:hover {
     color: darkred;
 }
 
-#main > .row > .left {
+#contact a {
+    color: black;
+    font: 1.3em Trebuchet MS;
+    display: table;
+    margin: 0 auto;
+    line-height: 5vh;
+}
+
+#contact a:hover {
+    color: orangered;
+}
+
+.left {
     flex: 1 1 70%;
+    padding-right: 4vw;
     /*background: rgba(200, 0 , 0, 0.2);*/
 }
 
-#main > .row > .right {
+.right {
     flex: 1 1 70%;
+    padding-left: 4vw;
     /*background: rgba(200, 0 , 0, 0.3);*/
 }
 
-#main > .row > .image {
+.image {
     flex: 1 1 30%;
-    /*background: rgba(200, 0 , 0, 0.4);*/
     text-align: center;
-    padding: 35vh 0 0 0;
+    padding-top: 22vh;
+    /*background: rgba(200, 0 , 0, 0.4);*/
 }
 
-#main > .row > .image > img {
-    min-width: 240px;
-    width: 18vw;
-    /*object-fit: cover;*/
+.image > img {
+    max-height: 36vh;
 }
 
 .box {
-    padding: 0 2vw;
+    padding: 2vh 2vw;
     border: 1px solid lightgray;
     box-shadow: 3px 5px 5px lightgray;
 }
@@ -168,7 +194,7 @@ a:hover {
 #footer {
     background-color: black;
     margin: 0 auto;
-    padding: 1.5vh;
+    padding: 1.3vh;
     color: orangered;
     font: 1.1em Montserrat;
     text-align: center;
@@ -223,8 +249,24 @@ a:hover {
         flex-flow: column;
     }
 
+    .left {
+        order: 2;
+        padding: 0;
+    }
+
+    .right {
+        order: 2;
+        padding: 0;
+    }
+
     .image {
-        display: none;
+        order: 1;
+        padding: 0;
+        max-height: 9vh;
+    }
+
+    .image > img {
+        max-height: 10vh;
     }
 
 }

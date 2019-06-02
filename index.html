@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <script>
         function expandNavbar(aNavbar) {
             let x = document.getElementById(aNavbar);
             if (x.className === "navbar") {
                 x.className += " responsive";
-            } else {
+            }
+            else {
                 x.className = "navbar";
             }
         }
@@ -35,44 +36,43 @@
             </a>
         </div>
     </div>
-    <div id="main">
-        <div class="row">
-            <div class="row-object" id="home">
-                <h1>HAMZAH UMAR</h1>
-                <br>
-                <div id="menu">
-                    <a href="#about">About Me</a>
-                    <a href="#education">Education</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#courses">Some Courses</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-<!--            <div class="row-object image" id="home-image">-->
-
-<!--            </div>-->
+    <div class="row-object" id="home">
+        <h1>HAMZAH UMAR</h1>
+        <div id="menu">
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#courses">Some Courses</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="row">
+    </div>
+    <div id="main">
+        <div class="row" id="about">
             <div class="row-object image" id="about-image">
                 <img src="assets/images/about.svg" alt="about">
             </div>
-            <div class="row-object right" id="about">
+            <div class="row-object right">
                 <h2>About Me</h2>
-                <br>
-                <p>Hey there, I'm Hamzah. I'm a 4th year Computer Science student at the University of Calgary who loves
-                    developing software. I have a particular affinity towards web applications, but I enjoy writing
-                    software of all kinds.
+                <p>Hey there, I'm Hamzah. I'm a 3rd year Computer Science student at the University of Calgary who loves
+                    developing software. Although I enjoy writing software of all kinds, I have recently developed a
+                    particular affinity towards web-based applications and I enjoy working on both the back and front
+                    ends.
                 </p>
                 <p>
-                    Outside of computer science, I love watching and playing sports. I have a particular interest in
-                    soccer and Real Madrid C.F.
+                    Outside of computer science, I love watching and playing sports. I especially enjoy watching soccer
+                    and I have an almost unhealthy obsession with my favorite team, Real Madrid.
+                </p>
+                <p>
+                    If I'm not writing code or playing soccer, you'll probably find me exploring random, obscure
+                    historical events. Or spending a solid 3 hours listening to a podcast about whether or not free
+                    will is compatible with our understanding of the universe. In short, I have a wide range of
+                    interests and I like exploring!
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="row-object left" id="education">
+        <div class="row" id="education">
+            <div class="row-object left">
                 <h2>Education</h2>
-                <br>
                 <div class="box">
                     <h3>University of Calgary, Alberta, Canada</h3>
                     <h4>BSc (Honours) Computer Science</h4>
@@ -95,33 +95,33 @@
                 <img src="assets/images/education.svg" alt="education">
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="projects">
             <div class="row-object image" id="projects-image">
                 <img src="assets/images/projects.svg" alt="projects">
             </div>
-            <div class="row-object right" id="projects">
+            <div class="row-object right">
                 <h2>Projects</h2>
-                <br>
+                <p style="text-align: center">[UNDER CONSTRUCTION]</p>
             </div>
         </div>
-        <div class="row">
-            <div class="row-object left" id="courses">
+        <div class="row" id="courses">
+            <div class="row-object left">
                 <h2>Some Courses</h2>
-                <br>
+                <p style="text-align: center">[UNDER CONSTRUCTION]</p>
             </div>
             <div class="row-object image" id="courses-image">
                 <img src="assets/images/courses.svg" alt="courses">
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="contact">
             <div class="row-object image" id="contact-image">
                 <img src="assets/images/contact.svg" alt="contact">
             </div>
-            <div class="row-object right" id="contact">
+            <div class="row-object right">
                 <h2>Contact</h2>
-                <br>
-                <p style="text-align: center">E-mail:  hamzah.umar@ucalgary.ca</p>
-                <p style="text-align: center">Phone:  (403) 891-2571</p>
+                <a href="javascript:void(0);">(403) 891-2571</a>
+                <a href="mailto:hamzah.umar@ucalgary.ca">E-mail</a>
+                <a href="https://github.com/hamzahumar">Github</a>
             </div>
         </div>
     </div>
