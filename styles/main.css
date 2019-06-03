@@ -35,15 +35,15 @@ h3 {
 }
 
 h4 {
-    font: 1.2em Arial;
     color: gray;
-    margin-bottom: 1vh;
+    font: 1.2em Arial;
+    margin-bottom: 1.2vh;
     margin-top: 0;
 }
 
 h5 {
-    font: 1.2em Arial;
     color: darkgray;
+    font: 1.2em Arial;
     margin-bottom: 1vh;
     margin-top: 0;
 }
@@ -186,9 +186,13 @@ a:hover{
 }
 
 .box {
-    padding: 2vh 2vw;
+    padding: 2vh 1vw 1vh 1vw;
     border: 1px solid lightgray;
     box-shadow: 3px 5px 5px lightgray;
+}
+
+.box > p {
+    margin-bottom: 1vh;
 }
 
 #footer {
