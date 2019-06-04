@@ -134,7 +134,7 @@ a:hover{
     background: #111111;
 }
 
-#home > #menu {
+#home #menu {
     font: 1.5em Questrial;
     font-weight: bold;
     line-height: 6vh;

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d42114c-b722-4a01-bbab-8dde32651cb0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
-    </list>
+    <list default="true" id="9d42114c-b722-4a01-bbab-8dde32651cb0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -32,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="272" column="10" lean-forward="true" selection-start-line="272" selection-start-column="10" selection-end-line="272" selection-end-column="10" />
+            <state relative-caret-position="629">
+              <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -156,12 +153,12 @@
       <workItem from="1559177298037" duration="12746000" />
       <workItem from="1559196906837" duration="2429000" />
       <workItem from="1559349403199" duration="30637000" />
-      <workItem from="1559622683466" duration="783000" />
+      <workItem from="1559622683466" duration="928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111214000" />
+    <option name="totallyTimeSpent" value="111359000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -218,8 +215,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="272" column="10" lean-forward="true" selection-start-line="272" selection-start-column="10" selection-end-line="272" selection-end-column="10" />
+        <state relative-caret-position="629">
+          <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
         </state>
       </provider>
     </entry>
