@@ -169,21 +169,28 @@ a:hover{
 
 .left {
     flex: 1 1 70%;
-    padding-right: 4vw;
+    /*padding-right: 4vw;*/
     /*background: rgba(200, 0 , 0, 0.2);*/
 }
 
 .right {
     flex: 1 1 70%;
-    padding-left: 4vw;
+    /*padding-left: 4vw;*/
     /*background: rgba(200, 0 , 0, 0.3);*/
 }
 
 .image {
     flex: 1 1 30%;
-    text-align: center;
     padding-top: 26vh;
     /*background: rgba(200, 0 , 0, 0.4);*/
+}
+
+.even .image {
+    /*padding-right: 4vw;*/
+}
+
+.odd .image {
+    /*padding-left: 4vw;*/
 }
 
 .image img {
@@ -340,3 +347,4 @@ a:hover{
     }
 
 }
+/* */
