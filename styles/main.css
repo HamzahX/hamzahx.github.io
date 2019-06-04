@@ -128,10 +128,15 @@ a:hover{
 }
 
 #home {
+    background-image: url(../assets/images/background.svg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 11vh 4vw 6.3vh 4vw;
     height: 100vh;
     flex: 1 1 100%;
-    background: #111111;
+    /*background: #111111;*/
 }
 
 #home #menu {
