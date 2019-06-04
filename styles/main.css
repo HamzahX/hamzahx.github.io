@@ -140,13 +140,13 @@ a:hover{
     line-height: 6vh;
 }
 
-#home > #menu > a {
+#home a {
     color: white;
     display: table;
     margin: 0 auto;
 }
 
-#home > #menu > a:hover {
+#home a:hover {
     color: darkred;
 }
 
@@ -177,11 +177,11 @@ a:hover{
 .image {
     flex: 1 1 30%;
     text-align: center;
-    padding-top: 22vh;
+    padding-top: 26vh;
     /*background: rgba(200, 0 , 0, 0.4);*/
 }
 
-.image > img {
+.image img {
     max-height: 36vh;
 }
 
@@ -191,7 +191,7 @@ a:hover{
     box-shadow: 3px 5px 5px lightgray;
 }
 
-.box > p {
+.box p {
     margin-bottom: 1vh;
 }
 
@@ -204,6 +204,7 @@ a:hover{
     text-align: center;
 }
 
+/*MOBILE RESPONSIVENESS*/
 @media all and (max-width: 960px) {
 
     #navbar-container {
@@ -248,7 +249,7 @@ a:hover{
         text-align: left;
     }
 
-    #main > .row {
+    .row {
         display: flex;
         flex-flow: column;
     }
@@ -269,7 +270,7 @@ a:hover{
         max-height: 9vh;
     }
 
-    .image > img {
+    .image img {
         max-height: 10vh;
     }
 
@@ -284,6 +285,53 @@ a:hover{
     }
 
 }
+/* */
 
+/*BIGGER COMPUTER SCREEN RESPONSIVENESS*/
+@media all and (min-width: 2304px) {
 
+    #main {
+        max-width: 1800px;
+    }
 
+}
+
+@media all and (min-width: 2560px) {
+
+    #main {
+        max-width: 2000px;
+    }
+
+}
+
+@media all and (min-width: 2880px) {
+
+    #main {
+        max-width: 2250px;
+    }
+
+}
+
+@media all and (min-width: 3000px) {
+
+    #main {
+        max-width: 2344px;
+    }
+
+}
+
+@media all and (min-width: 3200px) {
+
+    #main {
+        max-width: 2500px;
+    }
+
+}
+
+@media all and (min-width: 3840px) {
+
+    #main {
+        max-width: 3000px;
+    }
+
+}
