@@ -134,9 +134,7 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 11vh 4vw 6.3vh 4vw;
-    height: 100vh;
-    flex: 1 1 100%;
-    /*background: #111111;*/
+    min-height: 100vh;
 }
 
 #home #menu {
@@ -181,20 +179,20 @@ a:hover{
 
 .image {
     flex: 1 1 30%;
-    padding-top: 26vh;
+    padding-top: 47.5vh;
     /*background: rgba(200, 0 , 0, 0.4);*/
-}
-
-.even .image {
-    /*padding-right: 4vw;*/
-}
-
-.odd .image {
-    /*padding-left: 4vw;*/
 }
 
 .image img {
     max-height: 36vh;
+}
+
+.even .image {
+    padding-right: 4vw;
+}
+
+.odd .image {
+    padding-left: 4vw;
 }
 
 .box {
@@ -280,6 +278,14 @@ a:hover{
         order: 1;
         padding: 0;
         max-height: 9vh;
+    }
+
+    .even .image {
+        padding-right: 0;
+    }
+
+    .odd .image {
+        padding-left: 0;
     }
 
     .image img {
