@@ -162,6 +162,10 @@ a {
     margin-right: 8px;
 }
 
+#contact .right img:hover {
+    /*filter: invert(0.6) sepia(4) saturate(100%) hue-rotate(-30deg);*/
+}
+
 #contact a:hover {
     color: orangered;
 }
