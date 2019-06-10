@@ -170,6 +170,14 @@ a {
     color: orangered;
 }
 
+#contact table {
+    text-align: center;
+    margin: 0 auto;
+    width: 30vw;
+    min-width: 300px;
+    max-width: 400px;
+}
+
 #contact {
     text-align: center;
 }
