@@ -220,7 +220,7 @@ a {
 }
 
 .box a:hover {
-    color: darkred;
+    color: red;
 }
 
 #footer {
