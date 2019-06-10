@@ -163,11 +163,7 @@ a {
 }
 
 #contact .right img:hover {
-    /*filter: invert(0.6) sepia(4) saturate(100%) hue-rotate(-30deg);*/
-}
-
-#contact a:hover {
-    color: orangered;
+    filter: invert(0.6) sepia(4) saturate(17000%) hue-rotate(0deg) opacity(80%);
 }
 
 #contact table {
