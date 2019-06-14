@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d42114c-b722-4a01-bbab-8dde32651cb0" name="Default Changelist" comment="" />
+    <list default="true" id="9d42114c-b722-4a01-bbab-8dde32651cb0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="160" column="32" selection-start-line="160" selection-start-column="32" selection-end-line="160" selection-end-column="32" />
+            <state relative-caret-position="578">
+              <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -26,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="165" column="80" lean-forward="true" selection-start-line="165" selection-start-column="80" selection-end-line="165" selection-end-column="80" />
+            <state relative-caret-position="272">
+              <caret line="202" column="7" selection-start-line="202" selection-start-column="7" selection-end-line="202" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -72,41 +75,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="hamzahumar.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hamzahumar.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hamzahumar.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hamzahumar.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hamzahumar.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hamzahumar.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hamzahumar.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hamzahumar.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/_/8p19/cpsc471/project/Product" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -156,12 +133,14 @@
       <workItem from="1559349403199" duration="30637000" />
       <workItem from="1559622683466" duration="20487000" />
       <workItem from="1559949873287" duration="9374000" />
-      <workItem from="1560126177342" duration="3528000" />
+      <workItem from="1560126177342" duration="4533000" />
+      <workItem from="1560229651397" duration="114000" />
+      <workItem from="1560455435811" duration="2390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143820000" />
+    <option name="totallyTimeSpent" value="147329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -203,21 +182,21 @@
     <entry file="file://$PROJECT_DIR$/scripts/main.js" />
     <entry file="file://$PROJECT_DIR$/assets/images/favicon.png" />
     <entry file="file://$PROJECT_DIR$/assets/images/background.jpg" />
+    <entry file="file://$PROJECT_DIR$/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="202" column="7" selection-start-line="202" selection-start-column="7" selection-end-line="202" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="160" column="32" selection-start-line="160" selection-start-column="32" selection-end-line="160" selection-end-column="32" />
+        <state relative-caret-position="578">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#1;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="165" column="80" lean-forward="true" selection-start-line="165" selection-start-column="80" selection-end-line="165" selection-end-column="80" />
         </state>
       </provider>
     </entry>
