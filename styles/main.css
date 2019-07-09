@@ -203,6 +203,7 @@ a {
 
 .image img {
     max-height: 36vh;
+    min-height: 50px;
 }
 
 .even .image {
@@ -214,14 +215,13 @@ a {
 }
 
 .box {
-    padding: 2vh 1vw 1vh 1vw;
+    padding: 20px 20px 2px 20px;
     border: 1px solid lightgray;
     box-shadow: 3px 3px 5px lightgray;
 }
 
 .box p {
     line-height: 1.2;
-    margin-bottom: 1vh;
 }
 
 .box a:hover {
@@ -231,7 +231,7 @@ a {
 #footer {
     background-color: black;
     margin: 0 auto;
-    padding: 1.3vh;
+    padding: 13px;
     color: orangered;
     font: 1.1em Montserrat;
     text-align: center;
