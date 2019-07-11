@@ -220,7 +220,13 @@ a {
     box-shadow: 3px 3px 5px lightgray;
 }
 
-.box p {
+#transcript .box p {
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+#projects .box p {
+    font-size: 1.2em;
     line-height: 1.2;
 }
 
