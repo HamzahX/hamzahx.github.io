@@ -6,7 +6,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,17 +25,6 @@
             </a>
         </div>
     </div>
-    <script>
-        function expandNavbar(aNavbar) {
-            let x = document.getElementById(aNavbar);
-            if (x.className === "navbar") {
-                x.className += " responsive";
-            }
-            else {
-                x.className = "navbar";
-            }
-        }
-    </script>
     <div id="home">
         <div id="homeItems">
             <h1>HAMZAH</h1>
@@ -57,19 +45,20 @@
             <div class="row-object right">
                 <h2>About Me</h2>
                 <p>Hey there, I'm Hamzah. I'm a 4th year Computer Science student at the University of Calgary who loves
-                    developing software. Although I enjoy writing software of all kinds, I have recently developed a
-                    particular affinity towards web-based applications and I enjoy working on both the back and front
-                    ends.
+                    developing software. I have a passion for developing innovative solutions to challenging problems
                 </p>
                 <p>
-                    Outside of computer science, I love watching and playing sports. I especially enjoy watching soccer
-                    and I have an almost unhealthy obsession with my favorite team, Real Madrid.
+                    I have a particular affinity towards full-stack web development, but that never
+                    stops me from exploring a wide variety of software development ventures!
                 </p>
                 <p>
-                    If I'm not writing code or playing soccer, you'll probably find me exploring random, obscure
-                    historical events. I also spend an arguably insane amount of time listening to podcasts about
-                    anything from philosophy, to sport, to politics. In short, I have a wide range of interests and I
-                    like exploring!
+                    Programming Languages: Java, Javascript, Python, C/C++, HTML/CSS
+                </p>
+                <p>
+                    Frameworks, Libraries and Architectures: React.js, Node.js, Express, REST API, Socket.io
+                </p>
+                <p>
+                    Misc: Kubernetes cluster management, TensorFlow
                 </p>
             </div>
         </div>
@@ -81,7 +70,7 @@
                     <h4>BSc (Honours) Computer Science</h4>
                     <h5>Sep. 2016 - present</h5>
                     <p>
-                        GPA: 3.53
+                        GPA: 3.58
                     </p>
                 </div>
                 <br>
@@ -104,53 +93,72 @@
             </div>
             <div class="row-object right">
                 <h2>Projects</h2>
+                <p>Some software development projects I've worked on within the past year:</p>
                 <div class="box">
-                    <h3><a href="http://www.quicksplash.ca" target="_blank">QuickSplash.ca</a> (Group Project)</h3>
-                    <h4>A real-time multi-player party game</h4>
+                    <h3><a href="http://www.quicksplash.ca" target="_blank">QuickSplash.ca</a></h3>
+                    <h4>A real-time multi-player party game (group project)</h4>
                     <p>
-                        Drawing inspiration from JackBox Game's popular game Quiplash, we developed a quasi-clone
+                        Drawing inspiration from JackBox Game's popular game Quiplash, we developed a similar game
                         named QuickSplash. QuickSplash is a party game that revolves around giving the funniest
                         answers you can to a collection of pre-defined prompts.
                     </p>
                     <p>
-                        Technologies used: HTML/CSS, React.js, Node.js, Socket.io, Express, MongoDB
+                        Developed using: MERN Stack (MongoDB + Express + React.js + Node.js), Socket.io
                     </p>
                 </div>
                 <br>
-                <p>Stay tuned for more to come!</p>
+                <div class="box">
+                    <h3><a href="http://organizedchaos.herokuapp.com" target="_blank">Organized Chaos</a></h3>
+                    <h4>Soccer stats scraper and visualization tool (in progress)</h4>
+                    <p>
+                        I developed a series of scripts to automate the process of scraping data (with permission)
+                        from a popular soccer stats website. I also created a web application with a visualization tool
+                        to display the stats in my database.
+                    </p>
+                    <p>
+                        Developed using: MongoDB, Express, React.js, Node.js, Puppeteer (browser automation tool)
+                    </p>
+                </div>
+                <br>
             </div>
         </div>
         <div class="row odd" id="transcript">
             <div class="row-object left">
                 <h2>Mini Transcript</h2>
-                <div class="box">
-                    <h3>CPSC 471: Database Management Systems</h3>
-                    <p>Grade achieved: A</p>
-                </div>
-                <br>
-                <div class="box">
-                    <h3>CPSC 525: Principles of Computer Security</h3>
-                    <p>Grade achieved: A+</p>
-                </div>
-                <br>
-                <div class="box">
-                    <h3>SENG 513: Web-based Systems</h3>
-                    <p>Grade achieved: A-</p>
-                </div>
-                <br>
-                <div class="box">
-                    <h3>CPSC 413: Design and Analysis of Algorithms</h3>
-                    <p>Grade achieved: A</p>
-                </div>
-                <br>
-                <div class="box">
-                    <h3>CPSC 449: Programming Paradigms</h3>
-                    <p>Grade achieved: B+</p>
-                </div>
-                <br>
-                <div class="box">
-                    <h3>CPSC 457: Principles of Operating Systems</h3>
-                    <p>Grade achieved: B+</p>
+                <p>Courses I've taken at the 3rd year level or above:</p>
+                <div id="transcript-items">
+                    <div class="box">
+                        <h3>CPSC 501: Advanced Programming Techniques (A)</h3>
+                        <p>Code optimization, machine learning, TensorFlow</p>
+                    </div>
+                    <div class="box">
+                        <h3>CPSC 405: Software Entrepreneurship (A)</h3>
+                        <p>Storyboarding, UI/UX prototyping, Android app development</p>
+                    </div>
+                    <div class="box">
+                        <h3>CPSC 471: Database Management Systems (A)</h3>
+                        <p>Relational databases, SQL</p>
+                    </div>
+                    <div class="box">
+                        <h3>CPSC 525: Principles of Computer Security (A+)</h3>
+                        <p>Security vulnerabilities and exploits</p>
+                    </div>
+                    <div class="box">
+                        <h3>SENG 513: Web-based Systems (A-)</h3>
+                        <p>Web applications, client-server web architecture, REST API</p>
+                    </div>
+                    <div class="box">
+                        <h3>CPSC 413: Design and Analysis of Algorithms (A)</h3>
+                        <p>Time complexity, dynamic programming, reducibility</p>
+                    </div>
+                    <div class="box">
+                        <h3>CPSC 449: Programming Paradigms (B+)</h3>
+                        <p>Functional programming, Haskell, Prolog</p>
+                    </div>
+                    <div class="box">
+                        <h3>CPSC 457: Principles of Operating Systems (B+)</h3>
+                        <p>File systems, concurrency, scheduling</p>
+                    </div>
                 </div>
             </div>
             <div class="row-object image" id="courses-image">
@@ -164,24 +172,24 @@
             <div class="row-object right">
                 <h2>Contact</h2>
                 <p style="text-align: center">
-                    Please feel free me to contact me or view my profile at any of the following:
+                    Feel free me to contact me or view my profile at any of the following:
                 </p>
                 <br>
                 <table>
                     <tr>
                         <th>
                             <a href="mailto:hamzah.umar@ucalgary.ca" target="_blank">
-                                <img style="top:18px;" src="assets/images/email-icon.svg" alt="email">
+                                <img class="contact-icon" style="top:18px;" src="assets/images/email-icon.svg" alt="email">
                             </a>
                         </th>
                         <th>
                             <a href="https://www.linkedin.com/in/hamzah-umar-68b738188" target="_blank">
-                                <img style="left:5px;" src="assets/images/linkedin-icon.svg" alt="linkedin">
+                                <img class="contact-icon" style="left:5px;" src="assets/images/linkedin-icon.svg" alt="linkedin">
                             </a>
                         </th>
                         <th>
                             <a href="https://github.com/HamzahX" target="_blank">
-                                <img src="assets/images/github-icon.svg" alt="github">
+                                <img class="contact-icon" src="assets/images/github-icon.svg" alt="github">
                             </a>
                         </th>
                     </tr>
@@ -190,12 +198,14 @@
         </div>
     </div>
     <div id="footer">
-        &copy Hamzah Umar 2019
+        &copy Hamzah Umar 2020
         <div>
             The icons used for this site were made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" target="_blank">Zlatko Najdenovski</a>
             from <a href="https://www.flaticon.com/" target="_blank">www.flaticon.com</a>
             and are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC 3.0 BY</a></div>
     </div>
+    <script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </body>
 
 </html>

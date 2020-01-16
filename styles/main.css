@@ -18,42 +18,43 @@ h1 {
     text-align: center;
     font: 5.5em Questrial;
     font-weight: bold;
-    padding-bottom: 4vh;
+    padding-bottom: 1%;
 }
 
 h2 {
     color: red;
     text-align: center;
     font: 2.5em Questrial;
-    line-height: 0;
-    padding-bottom: 3vh;
+    margin-top: 0;
+    padding-bottom: 1%;
 }
 
 h3 {
+    color: darkred;
     font: 1.4em Arial;
-    margin-bottom: 1vh;
     margin-top: 0;
+    margin-bottom: 1%;
 }
 
 h4 {
     color: gray;
     font: 1.2em Arial;
-    margin-bottom: 1.2vh;
     margin-top: 0;
+    margin-bottom: 1%;
 }
 
 h5 {
     color: darkgray;
     font: 1.2em Arial;
-    margin-bottom: 1vh;
     margin-top: 0;
+    margin-bottom: 1%;
 }
 
 p {
     text-align: left;
     font: 1.3em Arial;
-    color: #545454;
-    line-height: 1.5;
+    color: #323222;
+    line-height: 150%;
 }
 
 li {
@@ -95,7 +96,7 @@ a {
     color: #f2f2f2;
     font: 1.1em Montserrat;
     text-align: center;
-    padding: 1.3vh 1.7vw;
+    padding: 12px 30px;
     text-decoration: none;
 }
 
@@ -116,6 +117,7 @@ a {
 
 .row {
     min-height: 100vh;
+    height: 100%;
     display: flex;
     flex-flow: row;
     padding: 8vh 4vw 8vh 4vw;
@@ -145,7 +147,7 @@ a {
 #home a {
     font: 1.5em Montserrat;
     font-weight: bold;
-    line-height: 6vh;
+    line-height: 200%;
     color: white;
     display: table;
     margin: 0 auto;
@@ -155,46 +157,18 @@ a {
     color: darkred;
 }
 
-#contact .right img {
-    display: inline-block;
-    position: relative;
-    top: 15px;
-    height: 50px;
-    width: 50px;
-    margin-right: 8px;
-}
-
-#contact .right img:hover {
-    filter: invert(0.6) sepia(4) saturate(17000%) hue-rotate(0deg) opacity(100%);
-}
-
-#contact table {
-    text-align: center;
-    margin: 0 auto;
-    width: 30vw;
-    min-width: 300px;
-    max-width: 400px;
-}
-
-#contact {
-    text-align: center;
-}
-
 .left {
     flex: 1 1 70%;
-    /*padding-right: 4vw;*/
     /*background: rgba(200, 0 , 0, 0.2);*/
 }
 
 .right {
     flex: 1 1 70%;
-    /*padding-left: 4vw;*/
     /*background: rgba(200, 0 , 0, 0.3);*/
 }
 
 .image {
     flex: 1 1 30%;
-    /*padding-top: 47.5vh;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -202,8 +176,8 @@ a {
 }
 
 .image img {
-    max-height: 36vh;
-    min-height: 50px;
+    max-height: 30%;
+    min-height: 30px;
 }
 
 .even .image {
@@ -220,18 +194,49 @@ a {
     box-shadow: 3px 3px 5px lightgray;
 }
 
-#transcript .box p {
+.box p {
     font-size: 1.2em;
-    line-height: 1;
-}
-
-#projects .box p {
-    font-size: 1.2em;
-    line-height: 1.2;
 }
 
 .box a:hover {
     color: red;
+}
+
+#transcript #transcript-items {
+    min-height: 100%;
+    display: grid;
+    border: none;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-column-gap: 2%;
+}
+
+#transcript .box {
+    margin-bottom: 4%;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact .right img {
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    height: 50px;
+    width: 50px;
+    margin-right: 8px;
+}
+
+#contact .right img:hover {
+    filter: invert(0.6) sepia(4) saturate(17000%) hue-rotate(40deg) opacity(100%);
+}
+
+#contact table {
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+    min-width: 300px;
 }
 
 #footer {
@@ -241,10 +246,6 @@ a {
     color: orangered;
     font: 1.1em Montserrat;
     text-align: center;
-}
-
-#footer a {
-    color: orangered;
 }
 
 #footer a:hover{
@@ -329,18 +330,29 @@ a {
         max-height: 10vh;
     }
 
-}
-
-@media all and (max-width: 450px) {
-
-    h1 {
-        color: #FF3B3F;
-        text-align: center;
-        font: 4em Helvetica;
-        font-weight: bold;
+    #transcript #transcript-items {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
     }
 
 }
+
+@media all and (max-width: 960px) and (pointer: none), (max-width: 500px) and (pointer: coarse) {
+    body {font-size: 85%;}
+
+    .contact-icon {
+        max-width: 40%;
+    }
+
+    .image {
+        padding-bottom: 1vh;
+    }
+}
+
+@media all and (max-width: 500px) and (pointer: none), (max-width: 500px) and (pointer: coarse) {
+    body {font-size: 75%;}
+}
+
 /* */
 
 /*BIGGER COMPUTER SCREEN RESPONSIVENESS*/
