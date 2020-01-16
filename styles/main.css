@@ -326,6 +326,10 @@ a {
         padding-left: 0;
     }
 
+    #transcript .image, #contact .image {
+        padding-bottom: 1vh;
+    }
+
     .image img {
         max-height: 10vh;
     }
@@ -342,10 +346,6 @@ a {
 
     .contact-icon {
         max-width: 40%;
-    }
-
-    .image {
-        padding-bottom: 1vh;
     }
 }
 
