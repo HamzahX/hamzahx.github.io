@@ -202,6 +202,10 @@ a {
     color: red;
 }
 
+#about p {
+    margin-top: 0;
+}
+
 #transcript #transcript-items {
     min-height: 100%;
     display: grid;
@@ -341,7 +345,7 @@ a {
 
 }
 
-@media all and (max-width: 960px) and (pointer: none), (max-width: 500px) and (pointer: coarse) {
+@media all and (max-width: 960px) and (pointer: none), (max-width: 960px) and (pointer: coarse) {
     body {font-size: 85%;}
 
     .contact-icon {
