@@ -1,3 +1,3 @@
 # hamzahx.github.io
 
-Personal website/Online Resume
+Personal website & online resume
