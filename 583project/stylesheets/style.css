@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+body div {
+    align-self: center;
+}
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    color: #696969;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-family: sans-serif;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.singleAxisScatterContainer {
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.singleAxisScatter {
+    flex: 1 0 50%;
+    max-width: 50%;
+}
+
+.singleAxisScatter svg {
+    display: block;
+    margin: 0 auto;
+}
+
+#v4-canvas{
+    display: block;
+    flex: 1 1 auto;
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100%;
+    padding: 2%;
+    background-color: #222222;
+}
+
+#v4-canvas h1{
+    color: whitesmoke;
+}
+
+#v4-canvas .axis line,
+#v4-canvas .axis path,
+#v4-canvas .axis text {
+    fill: none;
+    stroke: whitesmoke;
+}
+
+.tooltip {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    pointer-events: none;
+}
