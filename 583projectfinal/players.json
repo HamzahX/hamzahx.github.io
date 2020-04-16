@@ -1,0 +1,14 @@
+{
+  "nodes":[
+    {"name":"Full Back", "Number":"12", "x":"300", "y":"50", "Position":"FB"},
+    {"name":"Centre Back", "Number":"4", "x":"250", "y":"260", "Position":"CB"},
+    {"name":"Centre Back", "Number":"2", "x":"250", "y":"470", "Position":"CB"},
+    {"name":"Full Back", "Number":"15", "x":"300", "y":"660", "Position":"FB"},
+    {"name":"Attacking Midfielder", "Number":"23", "x":"700", "y":"50", "Position":"AM"},
+    {"name":"Central Midfielder", "Number":"24", "x":"500", "y":"260", "Position":"CM"},
+    {"name":"Central Midfielder", "Number":"8", "x":"500", "y":"470", "Position":"CM"},
+    {"name":"Attacking Midfielder", "Number":"10", "x":"700", "y":"660", "Position":"AM"},
+    {"name":"Forward", "Number":"7", "x":"870", "y":"360", "Position":"FW"},
+    {"name":"Attacking Midfielder", "Number":"11", "x":"700", "y":"360", "Position":"AM"}
+  ]
+}

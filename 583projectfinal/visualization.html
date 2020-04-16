@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization</title>
+    <link rel="stylesheet" href="./stylesheet/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./scripts/dataset.js"></script>
+</head>
+<body>
+
+    <div id="main">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">583 Project</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+<!--                    <li><a href="#">About</a></li>-->
+                    <li class="active"><a href="#">Viz #1</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <div class="navbar-form navbar-left">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="playerSearchBar" onfocus="this.value=''" placeholder="Search" name="search">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <div id="visualization">
+            <div id="position-filter">
+                <div id="soccer-pitch">
+                    <form onchange="drawScatterPlot()">
+                        <div><label><input name="position" value="FW" type="checkbox"><span>FW</span></label></div>
+                        <div><label><input name="position" value="AM" type="checkbox"><span>AM</span></label></div>
+                        <div><label><input name="position" value="CM" type="checkbox"><span>CM</span></label></div>
+                        <div>
+                            <label><input name="position" value="FB" type="checkbox"><span>FB</span></label>
+                            <label><input name="position" value="CB" type="checkbox"><span>CB</span></label>
+                            <label><input name="position" value="FB" type="checkbox"><span>FB</span></label>
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <button onclick="clearScreen()">Reset Visualization</button>
+            </div>
+            <div id="scatter">
+                <div id="canvas">
+                    <h1>A Comparison of Top 5 League Players</h1>
+                </div>
+            </div>
+            <div id="options">
+                <div>
+                    <p id="checkboxTitle">Preferred foot</p>
+                    <form id="footCheckboxForm">
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="R">Right
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="L">Left
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="B" checked>Both
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/visualization.js"></script>
+
+</body>
+</html>

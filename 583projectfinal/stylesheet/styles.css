@@ -1,0 +1,195 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+input[type=checkbox]{
+    transform: scale(0);
+}
+
+button:focus {
+    outline: none;
+    /*outline-color: dimgrey;*/
+}
+
+.navbar {
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#visualization {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#position-filter {
+    flex: 1 1 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#soccer-pitch {
+    /*border: 2px black solid;*/
+    width: 100%;
+    padding-top: 145.45454545454545%;
+    background-image: url(../pitch.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+}
+
+#soccer-pitch form {
+    flex-grow: 1;
+    margin-top: -145.454545454545%;
+    padding-bottom: 15%;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#soccer-pitch label {
+    font-size: 150%;
+    height: 100%;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#soccer-pitch label:hover {
+    border: 2px solid black;
+}
+
+input[type="checkbox"]:checked + span {
+    color: whitesmoke;
+}
+
+#soccer-pitch form div:nth-child(1) {
+    flex: 1 1 20%;
+}
+
+#soccer-pitch form div:nth-child(2) {
+    flex: 1 1 20%;
+}
+
+#soccer-pitch form div:nth-child(3) {
+    flex: 1 1 40%;
+}
+
+#soccer-pitch form div:nth-child(4) {
+    flex: 1 1 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+#soccer-pitch form div:nth-child(4) label:nth-child(1), #soccer-pitch form div:nth-child(4) label:nth-child(3) {
+    flex: 1 1 25%;
+}
+
+#soccer-pitch form div:nth-child(4) label:nth-child(2) {
+    flex: 1 1 50%;
+}
+
+#position-filter button {
+    padding: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #d7d7d7;
+    border: none;
+}
+
+#position-filter button:hover {
+    background-color: #c3c3c3;
+}
+
+#scatter {
+    flex: 1 1 70%;
+}
+
+#canvas {
+    display: block;
+    margin: 0 auto;
+    /*max-width: 1300px;*/
+    height: 100%;
+    padding: 2%;
+    /*padding: 0;*/
+    background-color: #222222;
+}
+
+#canvas .axis line,
+#canvas .axis path,
+#canvas .axis text {
+    fill: none;
+    stroke: whitesmoke;
+}
+
+#canvas h1 {
+    color: whitesmoke;
+}
+
+.singleAxisScatterContainer {
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.singleAxisScatter {
+    flex: 1 0 50%;
+    max-width: 50%;
+}
+
+.singleAxisScatter svg {
+    display: block;
+    margin: 0 auto;
+}
+
+#options {
+    flex: 1 1 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.node {
+    cursor: pointer;
+}
+
+#mainContainer div.tooltip {
+    position: absolute;
+    text-align: center;
+    height: 28px;
+    width: 128px;
+    padding: 2px;
+    font: 16px sans-serif;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    color: black;
+}
+
+#footCheckboxForm, #checkboxTitle {
+    text-align: center;
+}
+
+#mainPageHeader {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
